@@ -26,8 +26,8 @@ const userSchema = new mongoose.Schema(
 			default: "",
 		},
 	
-	}
-	
+	},
+	{ timestamps: true } // this will save created at and updated at time also in the database
 );
 const User = mongoose.model("User", userSchema);
 
